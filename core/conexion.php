@@ -1,14 +1,13 @@
 <?php
-    require_once "pg_conection_driver.php";
 
 	class Conexion{
 		private $host,$user,$pass,$db,$charset;
 		public function __construct(){
 			
 			$this->host		= "localhost";
-			$this->user		= "root";
-			$this->pass		= "";
-            $this->db		= "invemtario";
+			$this->user		= "postgres";
+			$this->pass		= "1234";
+            $this->db		= "nominasysdb";
 			$this->charset  = "utf8";
 			
 		}
