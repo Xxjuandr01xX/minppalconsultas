@@ -8,6 +8,7 @@
             /**
               * METODO PARA LANZAR PAGINA INDEX.
               */
+            
             return $this->render('login/login',["titulo" => "SISTEMA DE INVENTARIO."]);
 		}
         public function verificar(){
