@@ -48,19 +48,27 @@
 							<label for="" class="input-group-text rounded-0 ">
 								<span class = "bi-person-fill color-orange"></span>
 							</label>
-							<input type="text" placeholder="Nombre de Usuario" class="form-control rounded-0" id = "input-username">
+							<input type="text" placeholder="Nombre de Usuario" class="form-control rounded-0" id = "input_username">
 						</div>
 						<div class="input-group mt-3">
 							<label for="" class="input-group-text rounded-0 ">
 								<span class = "bi-lock-fill color-orange"></span>
 							</label>
-							<input type="password" placeholder="Contraseña" class="form-control rounded-0" id = "input-password">
+							<input type="password" placeholder="Contraseña" class="form-control rounded-0" id = "input_password">
 						</div>
 						<div class="input-group mt-3 mb-4">
 							<button id = "btn-submit" class="btn btn-orange rounded-0" style="width: 100%;">
 								INGRESAR
 							</button>
 						</div>
+						<a href="#" class = "text-center" >
+							Registrarse
+						</a>
+						<br>
+						<div class="spinner-border text-danger mt-3" role="status" id = "load-spin">
+							<span class="visually-hidden">Loading...</span>
+						</div>
+
 					</div>
 				</div>
 			</div>

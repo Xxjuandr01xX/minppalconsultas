@@ -1,4 +1,6 @@
 <?php
+	////////////DRIVER DE CONEXION///////////////////////////////
+	define("DB_DRIVER", "postgresql");
 	////////////EXTERNAL_LIBRARY/////////////////////////////////
 	define("LIBRARY_PATH",[
 		"Smarty"     => "core/library/Smarty/Smarty.class.php",

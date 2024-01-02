@@ -2,7 +2,11 @@
 	require_once "global/global.php";
 	require_once "core/conexion.php";
 	require_once "core/session.php";
-	require_once "core/querys.class.php";
+	if(DB_DRIVER == "mysql"){
+		require_once "core/querys.class.php";
+	}else if(DB_DRIVER == "postgresql"){
+		require_once "core/pgquerys.clss.php";
+	}
 	require_once "core/library.php";
 	require_once "core/controllerBase.php";
 	require_once "core/frontal.func.php";
