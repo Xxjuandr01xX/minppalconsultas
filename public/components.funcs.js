@@ -54,10 +54,13 @@ function alert_top_primary(id,mensaje){
 
 function alert_top_warning(id,mensaje){
 	$("#" + id).html(
-		'<div class="alert alert-warning " role="alert">' +
+		'<div id = "alert-child" class="alert alert-warning mt-2 text-center" role="alert"><b>' +
 		mensaje +
-		'</div>'
-	).slideDown(1500);
+		'</b></div>'
+	).slideDown();
+	setTimeout(() => {
+		$("#alert-child").slideUp();
+	}, 2000);
 }
 
 function alert_top_danger(id,mensaje){

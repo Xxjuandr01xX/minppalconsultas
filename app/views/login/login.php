@@ -8,7 +8,7 @@
 	<script type="text/javascript" src="public/assets/dist/js/jquery.min.js"></script>
 	<script type="text/javascript" src="public/assets/dist/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="public/components.funcs.js"></script>
-	<script type="text/javascript" src="public/assets/dist/js/jsLogin.js"></script>
+	<script type="text/javascript" src="public/assets/system/jsLogin.js"></script>
 	<title>Login</title>
 	<style type="text/css">
 		body{
@@ -31,7 +31,8 @@
 	</style>
 </head>
 <body>
-	<div id = "cargar-alerta"></div>
+	<div id = "cargar-alerta">
+	</div>
 	<div class="container-fluid ">
 		<div class="row d-flex justify-content-center">
 			<div class="col-md-4 mt-5">
@@ -65,10 +66,13 @@
 							Registrarse
 						</a>
 						<br>
-						<div class="spinner-border text-danger mt-3" role="status" id = "load-spin">
-							<span class="visually-hidden">Loading...</span>
+						<div class="row clearfix d-flex justify-content-center mt-2">
+							<div class="col-md-2">
+								<div class="spinner-border text-danger mt-3" role="status" id = "load-spin">
+									<span class="visually-hidden">Loading...</span>
+								</div>
+							</div>
 						</div>
-
 					</div>
 				</div>
 			</div>

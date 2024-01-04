@@ -11,11 +11,11 @@
             
             return $this->render('login/login',["titulo" => "SISTEMA DE INVENTARIO."]);
 		}
-        public function verificar(){
+        public function Login(){
             /**
               * METODO PARA VALIDAR EL ACCESO DE LOS USUARIOS AL SISTEMA
               */
-            $resp     = "";
+            /*$resp     = "";
             $username = filter_input(INPUT_POST, 'user', FILTER_SANITIZE_STRING);
             $password = filter_input(INPUT_POST, 'pass', FILTER_SANITIZE_STRING);
             foreach(getUsuario($username) as $usuarios){
@@ -29,7 +29,8 @@
                     $resp = "0";
                 }
             }
-            echo $resp;
+            echo $resp;*/
+            echo "HA LLEGADO AQUI CORRECTAMENTE. !";
         }
 	}
 ?>
