@@ -7,7 +7,7 @@
 			$this->host		= "localhost";
 			$this->user		= "postgres";
 			$this->pass		= "1234";
-            $this->db		= "nominasysdb";
+            $this->db		= "sis_nomina";
 			$this->charset  = "utf8";
 			
 		}
@@ -21,7 +21,7 @@
 
 		////////CONEXION CON POSTGRESQL///////////////
 		public function Conectarse(){
-			$con = new pg_connec("host='$this->host' port=5432 dbname='$this->db' user='$this->user' password='$this->pass' options='--client_encoding=UTF8'")or die("ERROR AL CONECTAR CON LA BASE DE DATOS");
+			$con = pg_pconnect("host='$this->host' port=5432 dbname='$this->db' user='$this->user' password='$this->pass' options='--client_encoding=UTF8'")or die("ERROR AL CONECTAR CON LA BASE DE DATOS");
 			//$con->set_charset($this->charset);
 			return $con;
 		}
