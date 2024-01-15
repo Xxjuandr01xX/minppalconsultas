@@ -10,26 +10,6 @@
     "Equipos/gestionar",
     "Equipos/ventas"
   ];
-  $proveedores = [
-    "Proveedores/nuevo",
-    "Proveedores/listado"
-  ];
-  $clientes = [
-    "Clientes/nuevo",
-    "Clientes/listado"
-  ];
-  $taller = [
-    "Taller/nuevo",
-    "Taller/listado",
-    "Taller/reportes"
-  ];
-  $Cfg = [
-    "Cfg/Usuarios",
-    "Cfg/Paises",
-    "Cfg/Servicios",
-    "Cfg/EstatusTickets",
-    "Cfg/EstadosEquipos"
-  ];
   /**
    *  Validacion de permisologia de usuaros
    */

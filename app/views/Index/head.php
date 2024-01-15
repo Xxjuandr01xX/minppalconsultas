@@ -1,5 +1,5 @@
 <?php
-  if ($_SESSION['user'] == null || $_SESSION['rol'] == null || $_SESSION['mail'] == null) {
+  if ($_SESSION['rol'] == null) {
     header('Location:?q=Home/Index');
   }else{
 ?>
@@ -17,6 +17,7 @@
     <link rel="stylesheet" type="text/css" href="public/dashboard.css">
     <link rel="stylesheet" type="text/css" href="public/plugins/DataTables/datatables.css">
     <script type="text/javascript" src="public/jquery.min.js"></script>
+    <script type="text/javascript" src="public/assets/dist/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="public/assets/dist/js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="public/dashboard.js"></script>
     <script type="text/javascript" src="public/plugins/DataTables/datatables.js"></script>

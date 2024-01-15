@@ -7,7 +7,7 @@
 			$this->host		= "localhost";
 			$this->user		= "postgres";
 			$this->pass		= "1234";
-            $this->db		= "sis_nomina";
+            $this->db		= "consultas";
 			$this->charset  = "utf8";
 			
 		}

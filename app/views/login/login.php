@@ -15,7 +15,7 @@
 			/**
 			 * se define la imagen de fondo para el login de la aplicacion
 			 * */
-			background-image: url('public/img/background.jpg');
+			background-image: url('public/img/bg_minppal.jpg');
 			background-attachment: fixed;
 			background-position: center;
 			background-repeat: no-repeat;
@@ -37,7 +37,7 @@
 		<div class="row d-flex justify-content-center">
 			<div class="col-md-4 mt-5">
 				<div class="card rounded-0" style=" box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);">
-					<div class="card-header bg-secondary rounded-0" >
+					<div class="card-header bg-primary rounded-0" >
 						<div class="row clearfix d-flex justify-content-center">
 							<div class="col-md-11">
 								<p class="text-center mt-2 display-6 text-white">Iniciar Session</p>
@@ -47,13 +47,13 @@
 					<div class="card-body">
 						<div class="input-group mt-3">
 							<label for="" class="input-group-text rounded-0 ">
-								<span class = "bi-person-fill color-orange"></span>
+								<span class = "bi-person-fill text-primary"></span>
 							</label>
 							<input type="text" placeholder="Nombre de Usuario" class="form-control rounded-0" id = "input_username">
 						</div>
 						<div class="input-group mt-3">
 							<label for="" class="input-group-text rounded-0 ">
-								<span class = "bi-lock-fill color-orange"></span>
+								<span class = "bi-lock-fill text-primary"></span>
 							</label>
 							<input type="password" placeholder="Contraseña" class="form-control rounded-0" id = "input_password">
 						</div>

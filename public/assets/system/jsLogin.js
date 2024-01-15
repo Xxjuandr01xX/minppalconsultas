@@ -40,14 +40,24 @@ function set_validate_login(){
 		};
 		$.ajax({
 			"method"   : "post",
-			"url"      : "localhost/str-base/?q=Home/Login",
+			"url"      : "localhost/sistemaConsultas/?q=Home/Login",
 			"data"     : dta_user,
 			beforeSend : function(){
 				$("#load-spin").css({"display":"block"});
 			},
 			success: function(resp){
 				$("#load-spin").css({"display":"none"});
-				console.log(resp);
+				var data = $.parseJSON(resp);
+				if(data.sucess == "1"){
+					window.location.href = "?q=Dash/Admin";
+				}else if(data.fail == "1"){
+					alert_top_warning("cargar-alerta", "Hubo un problema al consultar sus datos, pongase en contacto con los administradores del sistema!");
+					$("#input_username").val("");
+					$("#input_password").val("");
+					$("#input_username").focus();
+				}else{
+					console.log(resp);
+				}
 			}
 		});
 	}
